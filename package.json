@@ -12,6 +12,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cookieparser": "^0.1.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.6",
     "express": "^4.21.2",
     "firebase-admin": "^13.0.1",

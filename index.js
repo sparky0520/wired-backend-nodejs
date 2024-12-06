@@ -1,18 +1,13 @@
 import express from "express";
+import cors from "cors";
+import cookieParser from "cookieparser";
 import questionRoutes from "./questionRoutes.js";
 import profileRoutes from "./profileRoutes.js";
 
 const app = express();
 
 // Middleware
-app.use(
-  cors({
-    origin: "http://localhost:3000", // Replace with your frontend URL
-    credentials: true,
-  })
-);
 app.use(express.json());
-app.use(cookieParser());
 
 // Routes
 app.use("/question", questionRoutes);

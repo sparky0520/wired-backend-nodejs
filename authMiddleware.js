@@ -28,20 +28,21 @@ export function calculateLeague(points) {
   return "Legendary";
 }
 
-export async function createUserProfile(uid, email, username) {
-  const defaultProfile = {
-    displayName: username,
-    username,
-    points: 0,
-    league: "Bronze",
-    postedQuestions: [],
-    likedQuestions: [],
-    savedQuestions: [],
-  };
+// Frontend Function:
+// export async function createUserProfile(uid, email, username) {
+//   const defaultProfile = {
+//     displayName: username,
+//     username,
+//     points: 0,
+//     league: "Bronze",
+//     postedQuestions: [],
+//     likedQuestions: [],
+//     savedQuestions: [],
+//   };
 
-  await db.collection("profiles").doc(uid).set(defaultProfile);
-  return defaultProfile;
-}
+//   await db.collection("profiles").doc(uid).set(defaultProfile);
+//   return defaultProfile;
+// }
 
 // // Profile model interface
 // export interface UserProfile {

@@ -2,7 +2,7 @@ import admin from "firebase-admin";
 import { getFirestore } from "firebase-admin/firestore";
 import { getAuth } from "firebase-admin/auth";
 
-var serviceAccount = require("./serviceAccountKey.json");
+import serviceAccount from "./firebaseServiceAccountKey.json" assert { type: "json" };
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
