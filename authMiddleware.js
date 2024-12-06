@@ -1,4 +1,4 @@
-import { auth, db } from "./firebaseConfig";
+import { auth, db } from "./firebaseConfig.js";
 
 export async function authenticateUser(req, res, next) {
   const idToken = req.cookies.token; // Assuming JWT token is stored in cookies
