@@ -7,6 +7,7 @@ import profileRoutes from "./profileRoutes.js";
 const app = express();
 
 // Middleware
+app.use(cors({}));
 app.use(express.json());
 
 // Routes
